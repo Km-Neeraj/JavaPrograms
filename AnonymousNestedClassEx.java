@@ -5,6 +5,7 @@ class Abc{
 	void m2() {
 		System.out.println("Hi ABC");
 	}
+	
 }
 interface Xyz{
 	void m();
@@ -13,36 +14,41 @@ interface Xyz{
 
 public class AnonymousNestedClassEx {
 	public static void main(String[] args) {
-		
-		Abc a=new Abc(){
-			@Override
+		Abc a=new Abc() {
 			void m1() {
-				System.out.println("kjdfghdfkjghj");
-			}
-			@Override
-			void m2() {
-				show();
-				System.out.println("dfkjghkjdfhgdfkj");
-			}
-			void show() {
-				System.out.println("INCAPP");
+				System.out.println("Hello Anonymous");
 			}
 			
+			void m2() {
+				System.out.println("Hi Anonymous");
+			}
+			
+			void m3() {
+				
+			}
 		};
+		
+		
+		
 		a.m1();
 		a.m2();
-		//a.show(); //error
+		
+		
 		
 		Xyz x=new Xyz() {
-			@Override
+
+			
 			public void m() {
-				System.out.println("kkkkkkkkk");
+				System.out.println("Hello Xyz");
 			}
-			@Override
+
+			
 			public void mm() {
-				System.out.println("hhhhhhhh");
+				System.out.println("Hello mm");
 			}
+		
 		};
+		
 		x.m();
 		x.mm();
 	}
