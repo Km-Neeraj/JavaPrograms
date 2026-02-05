@@ -1,6 +1,6 @@
-interface Demo
+abstract class Demo
 {
-    void show();
+    abstract void show();
    
 }
 public class AnonymousExample {
@@ -10,7 +10,7 @@ public class AnonymousExample {
                              Demo d=new Demo(){
                                 public void show()
                                 {
-                                    System.out.println("interface show() overriden by anonymous class");
+                                    System.out.println("abstract  show() overriden by anonymous class");
                                 }
                          
                              };
