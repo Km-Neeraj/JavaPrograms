@@ -1,18 +1,16 @@
-class Demo
+interface Demo
 {
-    void show()
-    {
-                         System.out.println("Base class show");
-    }
+    void show();
+   
 }
 public class AnonymousExample {
 
                          public static void main(String[]abc)
                          {
                              Demo d=new Demo(){
-                                void show()
+                                public void show()
                                 {
-                                    System.out.println("show overriden by anonymous class");
+                                    System.out.println("interface show() overriden by anonymous class");
                                 }
                          
                              };
